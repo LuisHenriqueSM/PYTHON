@@ -20,8 +20,14 @@ try:
     #s.sendall(valor1.encode())
     #receber = s.recv(1024)
     #print(receber.decode())
+    
+    hex_s = '499602d2000000280000000000000001000000010000000000000000b669fd2e'
+    a = int(hex_s,16)
+    hex_n = hex(a)
+    
+    print(hex_n)
 
-    s.sendall("I–Ò(¶iý.".encode())
+    #s.sendall("I–Ò(¶iý.".encode())
     #s.send(valor1.encode(ascii()))
 
     #s1.sendall(valor1.encode())
