@@ -1,0 +1,52 @@
+import socket
+
+from datetime import time
+
+START = "499602d2"
+TAM_40 = "00000028"
+FLOW_ID_0 = "00000000"
+START_MENU_RAC = "00000001"
+STOP_MENU_RAC = "00000000"
+MenuValor = "00000001"
+MENU_SELEC_STOP = "00000000"
+UNUSED_RAC = "0000000000000000"
+POSTAMBLE = "b669fd2e"
+
+valor1 = (START+TAM_40+FLOW_ID_0+STOP_MENU_RAC+MenuValor+UNUSED_RAC+POSTAMBLE)
+print(valor1)
+
+
+
+#INICIANDO CONVERSÃO DE HEX PARA INT
+
+serie1= '0x49'
+a = int(serie1,16)
+
+serie2= '0x96'
+b = int(serie2,16)
+
+serie3= '0x02'
+c = int(serie3,16)
+
+serie4= '0xd2'
+d = int(serie4,16)
+
+valorInt = ([a]+[b]+[c]+[d])
+print(valorInt)
+
+#INICIANDO CONVERSÃO DE INT PARA ASCII
+
+asc1 = 73
+conv1 = chr(asc1)
+
+asc2 = 150
+conv2 = chr(asc2)
+
+asc3 = 2
+conv3 = chr(asc3)
+
+asc4 = 210
+conv4 = chr(asc4)
+
+valorAscii = (conv1+conv2+conv3+conv4)
+print(valorAscii)
